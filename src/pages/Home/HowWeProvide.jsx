@@ -61,7 +61,7 @@ function HowWeProvide() {
   };
 
   return (
-    <div className='grid grid-cols-1 lg:grid-cols-2 min-h-[80vh] mt-10 lg:mt-20 w-full px-4 sm:px-6 lg:px-8 gap-8 lg:gap-0 items-center bg-linear-to-br from-white via-blue-50/20 to-purple-50/10 relative overflow-hidden'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 min-h-[80vh] mt-10 lg:mt-20 w-full px-4 sm:px-6 lg:px-8 gap-8 lg:gap-0 items-center bg-[url(https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gradientBackground.png)]'>
             {/* Animated Background Elements */}
             <motion.div
               variants={floatingVariants}

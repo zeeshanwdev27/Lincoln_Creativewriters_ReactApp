@@ -139,19 +139,25 @@ const HeroSection = () => {
           className="text-center mt-20 sm:mt-12 lg:mt-35 max-w-6xl mx-auto"
         >
           <motion.h1
-            className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-bold leading-tight sm:leading-[1.1]"
+            className="text-6xl md:text-7xl lg:text-7xl xl:text-8xl font-bold leading-tight sm:leading-[1.1]"
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: 50, opacity: 0 }}
             transition={{ duration: 0.8 }}
           >
             Your Stories,{" "}
             <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
-              Our Words
+              Our
             </span>
+            <span className="pl-3 relative bg-gradient-to-r from-purple-700 to-[#764de1] bg-clip-text text-transparent">
+                        Words
+                        <div className="z-10 absolute bottom-0 left-0 w-full scale-[640px]" >
+                            <img src='https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gradient_arc.svg' alt="gradient" />
+                        </div>
+                    </span>
           </motion.h1>
 
           <motion.div
-            className="text-2xl sm:text-4xl lg:text-6xl font-bold text-gray-800 mt-4 sm:mt-6"
+            className="text-2xl sm:text-4xl lg:text-6xl font-bold text-gray-800 mt-8 sm:mt-10"
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: 30, opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -269,7 +275,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.6 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
               className="w-full space-y-6"
             >
               <motion.div
@@ -277,7 +283,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.7 }}
+                transition={{ duration: 0.8 }}
               >
                 {/* Full Name Field */}
                 <motion.div

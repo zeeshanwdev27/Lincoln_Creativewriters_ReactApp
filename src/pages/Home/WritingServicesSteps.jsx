@@ -118,7 +118,7 @@ function WritingServicesSteps() {
   };
 
   return (
-    <div className="min-h-screen py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-blue-50/20 to-purple-50/10 relative overflow-hidden">
+    <div className="min-h-screen py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[url(https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gradientBackground.png)]">
       {/* Animated Background Elements */}
       <motion.div
         variants={floatingVariants}

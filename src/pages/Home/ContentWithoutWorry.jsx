@@ -110,7 +110,7 @@ function ContentWithoutWorry() {
           </p>
 
           {/* Buttons Container */}
-                  <motion.div 
+        <motion.div 
           className="flex flex-col sm:flex-row gap-3 lg:gap-4 mt-2 lg:w-full sm:w-auto justify-center"
           variants={itemVariants}
         >
@@ -121,7 +121,7 @@ function ContentWithoutWorry() {
             whileHover="hover"
           >
             <motion.button 
-              className="cursor-pointer px-6 py-3 sm:px-8 sm:py-4 text-white rounded-full font-medium bg-gradient-to-r from-red-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 lg:w-full sm:w-auto"
+              className="cursor-pointer px-6 py-3 sm:px-8 sm:py-4 text-white rounded-full font-medium bg-linear-to-r from-red-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 lg:w-full sm:w-auto"
               variants={buttonVariants}
               initial="initial"
               whileHover="hover"

@@ -8,6 +8,8 @@ import CollabrateWithUs from './CollabrateWithUs.jsx'
 import WritingServicesSteps from './WritingServicesSteps.jsx'
 import ContentWithoutWorry from './ContentWithoutWorry.jsx'
 import WhyChooseUs from './WhyChooseUs.jsx'
+import Testimonials from './Testimonials.jsx'
+import FAQS from './FAQS.jsx'
 
 function MainHome() {
   return (
@@ -21,6 +23,8 @@ function MainHome() {
     <WritingServicesSteps/>
     <ContentWithoutWorry/>
     <WhyChooseUs/>
+    <Testimonials/>
+    <FAQS/>
       
     </>
   )
