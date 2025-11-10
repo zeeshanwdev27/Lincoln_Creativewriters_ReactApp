@@ -1,5 +1,5 @@
 import React from "react";
-import { Phone, MessageCircle, BookOpenText, Zap, Quote } from "lucide-react";
+import { PhoneCall , MessageCircle, BookOpenText, Zap, Quote } from "lucide-react";
 import { motion } from "framer-motion";
 
 function ContentWithoutWorry() {
@@ -72,7 +72,7 @@ function ContentWithoutWorry() {
       `}</style>
       
       <motion.section 
-        className="flex flex-col gap-3 items-center justify-center mx-auto w-full text-center py-16 md:py-20 lg:py-10 px-4 sm:px-6 lg:px-8 bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/banners/image-2.png')] bg-cover bg-center bg-no-repeat"
+        className="flex flex-col gap-3 items-center justify-center mx-auto w-full text-center py-16 md:py-20 lg:py-10 px-4 sm:px-6 lg:px-8 bg-[url('/bg-banner.png')] bg-cover bg-center bg-no-repeat"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
@@ -80,14 +80,14 @@ function ContentWithoutWorry() {
       >
         {/* Heading Section */}
         <motion.div 
-          className="flex flex-col text-center max-w-6xl"
+          className="flex flex-col text-center max-w-6xl gap-2 lg:gap-0"
           variants={itemVariants}
         >
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white leading-tight">
-            Get Content Without the Hassle with a
+          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white leading-tight">
+            GET CONTENT WITHOUT THE HASSLE 
           </h1>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white leading-tight">
-            Trusted Creative Writing Agency
+          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white leading-tight">
+           WITH A TRUSTED CREATIVE WRITING AGENCY
           </h1>
         </motion.div>
 
@@ -102,18 +102,19 @@ function ContentWithoutWorry() {
 
         {/* Description and Buttons */}
         <motion.div 
-          className="flex flex-col gap-2 max-w-4xl"
+          className="flex flex-col gap-2 max-w-xs lg:max-w-4xl "
           variants={itemVariants}
         >
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed">
-            Lincoln Creative Writers is the best equation to get your content without worry.
+           Lincoln Creative Writers is the best equation to get your content without worry.
           </p>
 
           {/* Buttons Container */}
         <motion.div 
-          className="flex flex-col sm:flex-row gap-3 lg:gap-4 mt-2 lg:w-full sm:w-auto justify-center"
+          className="flex flex-col sm:flex-row gap-3 lg:gap-4 mt-5 lg:mt-2 lg:w-full sm:w-auto justify-center"
           variants={itemVariants}
         >
+
           <motion.div 
             className="rainbow relative z-0 overflow-hidden p-0.5 flex items-center justify-center rounded-full"
             variants={rainbowHoverVariants}
@@ -121,7 +122,7 @@ function ContentWithoutWorry() {
             whileHover="hover"
           >
             <motion.button 
-              className="cursor-pointer px-6 py-3 sm:px-8 sm:py-4 text-white rounded-full font-medium bg-linear-to-r from-red-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 lg:w-full sm:w-auto"
+              className="cursor-pointer px-9 py-3 sm:px-8 sm:py-4 text-white rounded-full font-medium bg-linear-to-r from-red-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 lg:w-full sm:w-auto"
               variants={buttonVariants}
               initial="initial"
               whileHover="hover"
@@ -133,6 +134,7 @@ function ContentWithoutWorry() {
               </div>
             </motion.button>
           </motion.div>
+
 
           <motion.div 
             className="rainbow relative z-0 overflow-hidden p-0.5 flex items-center justify-center rounded-full"
@@ -148,8 +150,8 @@ function ContentWithoutWorry() {
               whileTap="tap"
             >
               <div className="flex gap-2 items-center justify-center">
-                <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                <span className="text-sm sm:text-base">+1 (917) 765-8780</span>
+                <PhoneCall  className="w-4 h-4 sm:w-5 sm:h-5" />
+                <span className="text-sm sm:text-base">Consult an Expert</span>
               </div>
             </motion.button>
           </motion.div>
@@ -161,7 +163,7 @@ function ContentWithoutWorry() {
             whileHover="hover"
           >
             <motion.button 
-              className="cursor-pointer px-6 py-3 sm:px-8 sm:py-4 text-white rounded-full font-medium bg-white/90 lg:w-full sm:w-auto"
+              className="cursor-pointer px-12 py-3 sm:px-15 sm:py-4 text-white rounded-full font-medium bg-white/90 lg:w-full sm:w-auto"
               variants={buttonVariants}
               initial="initial"
               whileHover="hover"

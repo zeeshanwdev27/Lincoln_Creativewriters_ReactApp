@@ -1,5 +1,5 @@
 import React from 'react'
-import { Phone, Mail, MapPin, Coins, MoveRight } from 'lucide-react';
+import { PhoneCall , Mail, MapPin, Coins, MoveRight } from 'lucide-react';
 import { motion } from "framer-motion";
 
 function Footer() {
@@ -147,7 +147,7 @@ function Footer() {
               whileHover="hover"
               className='flex gap-3 items-center cursor-pointer group'
             >
-              <Phone className='w-4 h-4'/> 
+              <PhoneCall  className='w-4 h-4'/> 
               <span className='text-sm group-hover:text-indigo-300 transition-colors'>+1 (917) 765-8780</span>
             </motion.div>
             

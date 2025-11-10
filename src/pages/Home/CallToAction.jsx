@@ -1,5 +1,5 @@
 import React from "react";
-import { Phone, Zap, Quote } from "lucide-react";
+import { PhoneCall , MessageCircle, BookOpenText, Zap, Quote } from "lucide-react";
 import { motion } from "framer-motion";
 
 function CallToAction() {
@@ -9,9 +9,9 @@ function CallToAction() {
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
-        duration: 0.8
-      }
-    }
+        duration: 0.8,
+      },
+    },
   };
 
   const itemVariants = {
@@ -21,24 +21,36 @@ function CallToAction() {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   const buttonVariants = {
     initial: { scale: 1 },
-    hover: { 
+    hover: {
       scale: 1.05,
       transition: {
         duration: 0.3,
-        ease: "easeInOut"
-      }
+        ease: "easeInOut",
+      },
     },
-    tap: { scale: 0.95 }
+    tap: { scale: 0.95 },
   };
 
-  const rainbowHoverVariants = {
+  const lineVariants = {
+    hidden: { width: 0 },
+    visible: {
+      width: "8rem",
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+        delay: 0.5,
+      },
+    },
+  };
+
+    const rainbowHoverVariants = {
     initial: { backgroundPosition: "0% 50%" },
     hover: { 
       backgroundPosition: "100% 50%",
@@ -50,53 +62,56 @@ function CallToAction() {
   };
 
   return (
-    <div className="min-h-[35vh] bg-linear-to-r from-indigo-600 to-purple-500 flex items-center justify-center py-8 px-4 sm:px-6 lg:px-8">
-      <motion.div 
-        className="flex flex-col gap-6 items-center justify-center w-full max-w-6xl"
-        variants={containerVariants}
+    <>
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        * {
+          font-family: 'Poppins', sans-serif;
+        }
+      `}</style>
+      
+      <motion.section 
+        className="flex flex-col gap-3 items-center justify-center mx-auto w-full text-center py-16 md:py-20 lg:py-10 px-4 sm:px-6 lg:px-8 bg-[url('/bg-banner.png')] bg-cover bg-center bg-no-repeat"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
+        viewport={{ once: true, amount: 0.3 }}
+        variants={containerVariants}
       >
+        {/* Heading Section */}
         <motion.div 
-          className="flex flex-col gap-1 lg:gap-3 text-center"
+          className="flex flex-col text-center max-w-6xl gap-2 lg:gap-0"
           variants={itemVariants}
         >
-          <motion.h1 
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white"
-            variants={itemVariants}
-          >
+          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white leading-tight">
             Our Creative Writing Professionals
-          </motion.h1>
-          <motion.h2 
-            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white"
-            variants={itemVariants}
-          >
+          </h1>
+          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white leading-tight">
             Take Content Creation to the Next Level
-          </motion.h2>
+          </h1>
         </motion.div>
 
+        {/* Animated Line */}
         <motion.div 
-          className="flex flex-col gap-1 lg:gap-2 text-center max-w-2xl"
+          className="h-1 bg-linear-to-r from-transparent via-white to-transparent my-2"
+          variants={lineVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        />
+
+        {/* Description and Buttons */}
+        <motion.div 
+          className="flex flex-col gap-2 max-w-xs lg:max-w-4xl "
           variants={itemVariants}
         >
-          <motion.p 
-            className="text-sm sm:text-base text-white/90"
-            variants={itemVariants}
-          >
-            Get professionals to provide top-notch writing services to get
-            exactly what you need.
-          </motion.p>
-          <motion.p 
-            className="text-sm sm:text-base text-white/90"
-            variants={itemVariants}
-          >
-            Give us a call and join our exclusive list of satisfied clients.
-          </motion.p>
-        </motion.div>
+          <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed">
+            Get professionals to provide top-notch writing services to get exactly what you need. <br />Give us a call and join our exclusive list of satisfied clients.
+          </p>
 
+          {/* Buttons Container */}
         <motion.div 
-          className="flex flex-col sm:flex-row gap-3 lg:gap-4 mt-2 lg:w-full sm:w-auto justify-center"
+          className="flex flex-col sm:flex-row gap-3 lg:gap-4 mt-5 lg:mt-2 lg:w-full sm:w-auto justify-center"
           variants={itemVariants}
         >
           <motion.div 
@@ -113,8 +128,8 @@ function CallToAction() {
               whileTap="tap"
             >
               <div className="flex gap-2 items-center justify-center">
-                <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                <span className="text-sm sm:text-base">+1 (917) 765-8780</span>
+                <PhoneCall  className="w-4 h-4 sm:w-5 sm:h-5" />
+                <span className="text-sm sm:text-base">Consult an Expert</span>
               </div>
             </motion.button>
           </motion.div>
@@ -126,16 +141,15 @@ function CallToAction() {
             whileHover="hover"
           >
             <motion.button 
-              className="cursor-pointer px-6 py-3 sm:px-8 sm:py-4 text-white rounded-full font-medium bg-white/90 lg:w-full sm:w-auto"
+              className="cursor-pointer px-12 py-3 sm:px-15 sm:py-4 text-white rounded-full font-medium bg-white/90 lg:w-full sm:w-auto"
               variants={buttonVariants}
               initial="initial"
               whileHover="hover"
               whileTap="tap"
             >
               <div className="flex gap-2 items-center justify-center">
-                <Quote className="w-4 h-4 sm:w-5 sm:h-5 text-purple-500" />
-                <span className="text-black text-sm sm:text-base">Get Free Quote</span>
-                <Zap className="w-3 h-3 sm:w-4 sm:h-4 text-amber-500" />
+                <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 text-purple-500" />
+                <span className="text-black text-sm sm:text-base">LIVE CHAT</span>
               </div>
             </motion.button>
 
@@ -144,9 +158,10 @@ function CallToAction() {
         </motion.div>
 
 
-        
-      </motion.div>
-    </div>
+
+        </motion.div>
+      </motion.section>
+    </>
   );
 }
 
