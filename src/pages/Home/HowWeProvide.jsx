@@ -97,7 +97,7 @@ function HowWeProvide() {
         </motion.h1>
         
         <motion.p 
-          className='text-sm sm:text-base text-gray-700'
+          className='text-sm sm:text-base text-slate-600'
           variants={itemVariants}
         >
           Lincoln Creative Writers is all about curating brand-specific content that drives business credibility. Regardless of what you need, our troupe of expert writers can craft engaging content to boost reader engagement and improve your online presence. From SEO-focused articles and blogs to more technical projects like grant proposals and newsletters, trust our creative writing professionals to prepare compelling pieces that maintain industry-leading positions.
@@ -111,14 +111,14 @@ function HowWeProvide() {
         </motion.h2>
         
         <motion.p 
-          className='text-sm sm:text-base text-gray-700'
+          className='text-sm sm:text-base text-slate-600'
           variants={itemVariants}
         >
           Unlike other creative writing companies that believe creativity translates to writing fairy tales and fictional pieces, we go up a notch by producing high-quality content that not only entices readers but also improves brand loyalty to the business.
         </motion.p>
         
         <motion.div 
-          className='flex flex-col sm:flex-row justify-center gap-3 lg:gap-4 mt-4'
+          className='flex flex-col sm:flex-row justify-start gap-3 lg:gap-4 mt-4'
           variants={itemVariants}
         >
           <motion.button 
