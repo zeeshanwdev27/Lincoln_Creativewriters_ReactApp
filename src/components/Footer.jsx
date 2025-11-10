@@ -369,16 +369,17 @@ function Footer() {
             whileHover={{ scale: 1.05 }}
             src="/payment.png" 
             alt="paymentIcons" 
-            className='h-8 object-contain'
+            className='h-13 lg:h-13 object-contain'
           />
           <motion.img 
             whileHover={{ scale: 1.05 }}
             src="seals-footer.png" 
             alt="seals-footer" 
-            className='h-8 object-contain'
+            className='h-12 lg:h-13 object-contain'
           />
         </motion.div>
       </motion.div>
+
     </motion.div>
   );
 }
