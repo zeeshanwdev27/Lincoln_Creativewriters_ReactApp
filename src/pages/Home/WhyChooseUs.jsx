@@ -144,7 +144,7 @@ function WhyChooseUs() {
 
         {/* Left Content */}
         <motion.div
-          className="w-full max-w-full lg:max-w-xl mx-auto lg:mx-0 lg:ml-auto flex flex-col gap-4 sm:gap-5 lg:gap-8 xl:gap-10 order-2 lg:order-1"
+          className="w-full max-w-full lg:max-w-xl mx-auto lg:mx-0 lg:ml-auto flex flex-col gap-4 sm:gap-5 lg:gap-8 xl:gap-10 order-2 lg:order-1 px-5 lg:px-0"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -152,7 +152,7 @@ function WhyChooseUs() {
         >
           <motion.div className="flex flex-col gap-3 sm:gap-4" variants={itemVariants}>
             <motion.h1
-              className="flex flex-col text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-800 leading-tight sm:leading-tight lg:leading-tight"
+              className="flex flex-col text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-800 leading-tight sm:leading-tight lg:leading-tight"
               variants={itemVariants}
             >
               <motion.span
@@ -188,7 +188,7 @@ function WhyChooseUs() {
 
           <motion.div className="flex flex-col gap-3 sm:gap-4" variants={itemVariants}>
             <motion.h1
-              className="flex flex-col text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-800 leading-tight sm:leading-tight lg:leading-tight"
+              className="flex flex-col text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-800 leading-tight sm:leading-tight lg:leading-tight"
               variants={itemVariants}
             >
               <motion.span
@@ -239,7 +239,7 @@ function WhyChooseUs() {
             <motion.img
               src="/whychooseus.png"
               alt="Why Choose Us"
-              className="w-full max-w-[280px] xs:max-w-[320px] sm:max-w-[380px] md:max-w-[440px] lg:max-w-[500px] xl:max-w-[600px] rounded-2xl"
+              className="w-full max-w-[350px] xs:max-w-[320px] sm:max-w-[380px] md:max-w-[440px] lg:max-w-[500px] xl:max-w-[600px] rounded-2xl"
               whileInView={{
                 scale: 1,
                 opacity: 1,
@@ -280,7 +280,7 @@ function WhyChooseUs() {
       >
         {/* Years of Experience */}
         <motion.div
-          className="border border-slate-200 p-4 sm:p-6 lg:p-10  px-6 sm:px-8 lg:px-12  relative bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 w-full sm:flex-1 max-w-[200px] md:max-w-[220px] lg:max-w-[350px]"
+          className="border border-slate-200 p-4 sm:p-6 lg:p-10  px-6 sm:px-8 lg:px-12  relative bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 w-full sm:flex-1 max-w-[300px] md:max-w-[220px] lg:max-w-[350px] py-8 lg:py-10"
           variants={statItemVariants}
           whileHover="hover"
         >
@@ -300,7 +300,7 @@ function WhyChooseUs() {
 
         {/* Books Written */}
         <motion.div
-          className="border border-slate-200 p-4 sm:p-6 lg:p-10 xl:p-10 px-6 sm:px-8 lg:px-12 xl:px-20 relative bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 w-full sm:flex-1 max-w-[200px] md:max-w-[220px] lg:max-w-[350px]"
+          className="border border-slate-200 p-4 sm:p-6 lg:p-10 xl:p-10 px-6 sm:px-8 lg:px-12 xl:px-20 relative bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 w-full sm:flex-1 max-w-[300px] md:max-w-[220px] lg:max-w-[350px] py-8 lg:py-10"
           variants={statItemVariants}
           whileHover="hover"
         >
@@ -320,7 +320,7 @@ function WhyChooseUs() {
 
         {/* American Writers */}
         <motion.div
-          className="border border-slate-200 p-4 sm:p-6 lg:p-10 xl:p-10 px-6 sm:px-8 lg:px-12 xl:px-20 relative bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 w-full sm:flex-1 max-w-[200px]  md:max-w-[220px] lg:max-w-[350px]"
+          className="border border-slate-200 p-4 sm:p-6 lg:p-10 xl:p-10 px-6 sm:px-8 lg:px-12 xl:px-20 relative bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 w-full sm:flex-1 max-w-[300px]  md:max-w-[220px] lg:max-w-[350px] py-8"
           variants={statItemVariants}
           whileHover="hover"
         >
