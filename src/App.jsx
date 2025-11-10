@@ -1,6 +1,6 @@
 import React from "react"
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom"
-import Layout from "./layout/Layout.jsx"
+import Layout from "./Layout/Layout.jsx"
 
 const MainHome = React.lazy(()=> import('./pages/Home/MainHome.jsx'))
 
