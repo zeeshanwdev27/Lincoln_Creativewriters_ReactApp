@@ -11,12 +11,12 @@ const Testimonials = React.lazy(()=> import('../../Home/Testimonials.jsx'))
 function Article() {
   return (
     <>
-    <ArticleWriting/>
+    <ArticleWriting title1={'Premium'} title2={'Article'} title3={'Writing'} title4={'Services'} description={"Hire article writers who can provide you with results helping you boost your business."}/>
     <HireExpert/>
     <CallToAction title={'Top Notch Creative Writing Service'} title2={'Get Impactful Content That Matters'} description={"Our creative writing services are top-notch, backed by solid research, and completely free from plagiarism. It's all about quality you can count on!"}/>
     <ArticleWritingService/>
     <CheckSampleArticle/>
-    <ChoosePackage/>
+    <ChoosePackage header={'Article'}/>
     <CallToAction title={'Lincoln Marketing Agency'} title2={'A One-Stop Shop for All Your Content Needs'} description={"Sit back and relax. Our writers will take care of your needs."}/>
     <DistinctiveFeatures/>
     <Testimonials title={'Appreciation from Clients'}/>

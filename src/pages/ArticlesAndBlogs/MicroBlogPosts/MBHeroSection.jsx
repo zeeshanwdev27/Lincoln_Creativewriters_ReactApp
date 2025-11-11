@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-const ArticleWriting = ({title1, title2, title3, title4, description}) => {
+const MBHeroSection = ({title1, title2, title3, title4, description}) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -140,38 +140,6 @@ const ArticleWriting = ({title1, title2, title3, title4, description}) => {
         >
           {description}
         </motion.p>
-
-        {/* Offer */}
-        <motion.div
-          variants={itemVariants}
-          className="flex items-center gap-2 text-lg sm:text-xl lg:text-2xl text-gray-600 text-center max-w-2xl sm:max-w-3xl mt-6 sm:mt-8 leading-relaxed font-light px-4"
-        >
-          <h1 className="text-red-600 text-2xl md:text-3xl lg:text-4xl font-bold">
-            Starting from only
-          </h1>
-
-          <div className="flex gap-4 lg:gap-6 items-center">
-          <span
-          >
-            <ArrowRight className="w-7 h-7 md:w-8 md:h-8  lg:w-10 lg:h-10 text-red-600 " />
-          </span>
-
-              <motion.p
-      className="bg-red-600 text-white px-2 py-1 md:px-3 md:py-1.5 lg:px-4 lg:py-1.5 rounded-2xl lg:text-5xl text-3xl font-mono"
-      animate={{
-        scale: [1, 1.15, 1],
-      }}
-      transition={{
-        duration: 1.8,
-        repeat: Infinity,
-        ease: "easeInOut",
-      }}
-    >
-      $10
-    </motion.p>
-
-          </div>
-        </motion.div>
 
         {/* Trust Badge */}
         <motion.div
@@ -456,4 +424,4 @@ const ArticleWriting = ({title1, title2, title3, title4, description}) => {
   );
 };
 
-export default ArticleWriting;
+export default MBHeroSection;

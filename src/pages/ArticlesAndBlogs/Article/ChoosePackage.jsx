@@ -1,26 +1,26 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-function ChoosePackage() {
+function ChoosePackage({header}) {
   const [activeTab, setActiveTab] = useState("basic");
 
   const packageData = {
     basic: [
       {
         package: "Bronze (300-500 words)",
-        noOfArticles: "10 Custom Article Posts",
+        noOfArticles: `10 Custom ${header} Posts`,
         price: "$95",
         perArticle: "$10",
       },
       {
         package: "Silver (600-800 words)",
-        noOfArticles: "10 Custom Article Posts",
+        noOfArticles: `10 Custom ${header} Posts`,
         price: "$170",
         perArticle: "$18",
       },
       {
         package: "Gold (900-1200 words)",
-        noOfArticles: "10 Custom Article Posts",
+        noOfArticles: `10 Custom ${header} Posts`,
         price: "$330",
         perArticle: "$35",
       },
@@ -28,25 +28,25 @@ function ChoosePackage() {
     advance: [
       {
         package: "Bronze (300-500 words)",
-        noOfArticles: "10 Custom Article Posts",
+        noOfArticles: `10 Custom ${header} Posts`,
         price: "$35",
         perArticle: "$15",
       },
       {
         package: "Silver (600-800 words)",
-        noOfArticles: "10 Custom Article Posts",
+        noOfArticles: `10 Custom ${header} Posts`,
         price: "$250",
         perArticle: "$25",
       },
       {
         package: "Gold (900-1200 words)",
-        noOfArticles: "10 Custom Article Posts",
+        noOfArticles: `10 Custom ${header} Posts`,
         price: "$450",
         perArticle: "$45",
       },
       {
         package: "Custom (1300+ words)",
-        noOfArticles: "10 Custom Article Posts",
+        noOfArticles: `10 Custom ${header} Posts`,
         price: "Live Chat",
         perArticle: "Live Chat",
       },
@@ -54,25 +54,25 @@ function ChoosePackage() {
     expert: [
       {
         package: "Bronze (300-500 words)",
-        noOfArticles: "10 Custom Article Posts",
+        noOfArticles: `10 Custom ${header} Posts`,
         price: "$240",
         perArticle: "$24",
       },
       {
         package: "Silver (600-800 words)",
-        noOfArticles: "10 Custom Article Posts",
+        noOfArticles: `10 Custom ${header} Posts`,
         price: "$400",
         perArticle: "$40",
       },
       {
         package: "Gold (900-1200 words)",
-        noOfArticles: "10 Custom Article Posts",
+        noOfArticles: `10 Custom ${header} Posts`,
         price: "$720",
         perArticle: "$72",
       },
       {
         package: "Custom (1300+ words)",
-        noOfArticles: "10 Custom Article Posts",
+        noOfArticles: `10 Custom ${header} Posts`,
         price: "Live Chat",
         perArticle: "Live Chat",
       },
@@ -195,9 +195,9 @@ function ChoosePackage() {
           {/* Table Header - Hidden on mobile */}
           <div className="hidden md:flex bg-indigo-500 text-white font-semibold">
             <div className="flex-1 p-4 border-r border-indigo-400">Package Name</div>
-            <div className="flex-1 p-4 border-r border-indigo-400">No. of Articles</div>
+            <div className="flex-1 p-4 border-r border-indigo-400">No. of {header}</div>
             <div className="flex-1 p-4 border-r border-indigo-400">Price</div>
-            <div className="flex-1 p-4 border-r border-indigo-400">Per Article</div>
+            <div className="flex-1 p-4 border-r border-indigo-400">Per {header}</div>
             <div className="flex-1 p-4">Order</div>
           </div>
 
@@ -247,7 +247,7 @@ function ChoosePackage() {
                       {data.perArticle === "Live Chat" ? (
                         <span className="text-green-600 font-medium">{data.perArticle}</span>
                       ) : (
-                        <span>{data.perArticle} <span className="text-sm text-gray-500">per article</span></span>
+                        <span>{data.perArticle} <span className="text-sm text-gray-500">Per {header}</span></span>
                       )}
                     </div>
 
