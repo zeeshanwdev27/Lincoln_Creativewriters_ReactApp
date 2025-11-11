@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function BottomNavbar() {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -6,47 +7,47 @@ function BottomNavbar() {
   const menuItems = [
     { 
       name: 'Articles & Blogs', 
-      submenu: ['Blog Writing', 'Article Creation', 'Content Strategy']
+      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
     },
     { 
       name: 'Books', 
-      submenu: ['Ebook Writing', 'Manuscript Editing', 'Publishing Support']
+      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
     },
     { 
       name: 'Business Writing', 
-      submenu: ['Proposals', 'Reports', 'Business Plans']
+      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
     },
     { 
       name: 'Editing Service', 
-      submenu: ['Proofreading', 'Copy Editing', 'Substantive Editing']
+      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
     },
     { 
       name: 'Personal Writing', 
-      submenu: ['Resumes', 'Cover Letters', 'Personal Statements']
+      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
     },
     { 
       name: 'Digital Solution', 
-      submenu: ['Web Development', 'App Development', 'Digital Transformation']
+      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
     },
     { 
       name: 'Design', 
-      submenu: ['UI/UX Design', 'Graphic Design', 'Brand Identity']
+      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
     },
     { 
       name: 'Marketing', 
-      submenu: ['Digital Marketing', 'Content Marketing', 'Email Marketing']
+      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
     },
     { 
       name: 'Social Media', 
-      submenu: ['Social Media Management', 'Content Creation', 'Analytics']
+      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
     },
     { 
       name: 'SEO', 
-      submenu: ['On-Page SEO', 'Technical SEO', 'SEO Audits']
+      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
     },
     { 
       name: 'Industries', 
-      submenu: ['Healthcare', 'Technology', 'Finance', 'Education']
+      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
     },
   ];
 
@@ -62,7 +63,7 @@ function BottomNavbar() {
               onMouseEnter={() => setActiveDropdown(item.name)}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <button className="flex items-center gap-1 px-4 py-2 text-white/90 hover:text-white font-medium rounded-lg transition-all duration-200 group-hover:bg-white/10">
+              <button className="cursor-pointer flex items-center gap-1 px-4 py-2 text-white/90 hover:text-white font-medium rounded-lg transition-all duration-200 group-hover:bg-white/10">
                 {item.name}
                 <svg 
                   className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === item.name ? 'rotate-180' : ''}`}
@@ -79,13 +80,13 @@ function BottomNavbar() {
                 <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-xl shadow-2xl border border-gray-200 z-50 animate-in fade-in-0 zoom-in-95">
                   <div className="p-2">
                     {item.submenu.map((subItem, subIndex) => (
-                      <a
+                      <Link
                         key={subIndex}
-                        href="#"
+                        to={subItem.link}
                         className="block px-4 py-3 text-gray-700 hover:bg-indigo-50 rounded-lg transition-colors duration-200 hover:text-indigo-700 font-medium"
                       >
-                        {subItem}
-                      </a>
+                        {subItem.name}
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -95,19 +96,6 @@ function BottomNavbar() {
         </ul>
       </div>
 
-      {/* Mobile Navigation */}
-      <div className="lg:hidden overflow-x-auto">
-        <div className="flex space-x-1 py-3 px-4 min-w-max">
-          {menuItems.map((item, index) => (
-            <button
-              key={index}
-              className="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-full text-sm font-medium whitespace-nowrap transition-colors duration-200 backdrop-blur-sm"
-            >
-              {item.name.split(' ')[0]}
-            </button>
-          ))}
-        </div>
-      </div>
     </div>
   );
 }

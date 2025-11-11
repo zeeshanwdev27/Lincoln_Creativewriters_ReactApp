@@ -10,6 +10,7 @@ import {
   BadgeCheck
 } from "lucide-react";
 import BottomNavbar from "./BottomNavbar";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,6 +19,7 @@ function Navbar() {
     <>
       <nav className="z-50 flex items-center justify-between w-full py-3 px-6 md:px-8 lg:px-50 bg-white/95 backdrop-blur-xl shadow-sm border-b border-gray-100/80">
         {/* Logo */}
+        <Link to='/'>
         <div className="flex items-center space-x-3 group cursor-pointer">
           <div className="relative">
             <div className="w-12 h-12 bg-linear-to-br from-indigo-600 via-purple-600 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
@@ -32,6 +34,7 @@ function Navbar() {
             <p className="text-xs text-gray-500 font-medium -mt-1">Creative Content</p>
           </div>
         </div>
+        </Link>
 
         {/* Desktop Call To Actions */}
         <div className="hidden md:flex items-center gap-3">

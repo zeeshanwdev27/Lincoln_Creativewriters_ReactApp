@@ -10,10 +10,11 @@ import {
   PenTool,
   MessageCircle,
   Zap,
+  Redo,
 } from "lucide-react";
 import { useState } from "react";
 
-const HeroSection = () => {
+const ArticleWriting = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -100,47 +101,80 @@ const HeroSection = () => {
           className="text-center mt-20 sm:mt-12 lg:mt-35 max-w-6xl mx-auto"
         >
           <motion.h1
-            className="text-6xl md:text-7xl lg:text-7xl xl:text-8xl font-bold leading-tight sm:leading-[1.1]"
+            className="text-5xl md:text-7xl lg:text-7xl xl:text-8xl font-bold leading-tight sm:leading-[1.1]"
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: 50, opacity: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Your Stories,{" "}
+            Premium{" "}
             <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
-              Our
+              Article
             </span>
             <span className="pl-3 relative bg-gradient-to-r from-purple-700 to-[#764de1] bg-clip-text text-transparent">
-                        Words
-                        <div className="z-10 absolute bottom-0 left-0 w-full scale-[640px]" >
-                            <img src='https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gradient_arc.svg' alt="gradient" />
-                        </div>
-                    </span>
+              Writing
+              <div className="z-10 absolute bottom-0 left-0 w-full scale-[640px]">
+                <img
+                  src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gradient_arc.svg"
+                  alt="gradient"
+                />
+              </div>
+            </span>
           </motion.h1>
 
           <motion.div
-            className="text-2xl sm:text-4xl lg:text-6xl font-bold text-gray-800 mt-8 sm:mt-10"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-800 mt-5 lg:mt-10"
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: 30, opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Creative{" "}
             <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Writing
-            </span>{" "}
-            Excellence
+              Services
+            </span>
           </motion.div>
         </motion.div>
 
         {/* Subheading */}
         <motion.p
           variants={itemVariants}
-          className="text-lg sm:text-xl lg:text-2xl text-gray-600 text-center max-w-2xl sm:max-w-3xl mt-6 sm:mt-8 leading-relaxed font-light px-4"
+          className="text-md md:text-xl lg:text-2xl text-gray-600 text-center  text-bold max-w-2xl sm:max-w-3xl mt-6 sm:mt-8 leading-relaxed font-light px-4"
         >
-          Transform your ideas into captivating masterpieces with our expert
-          creative writing services
+          Hire article writers who can provide you with results helping you
+          boost your business.
         </motion.p>
 
-                {/* Trust Badge */}
+        {/* Offer */}
+        <motion.div
+          variants={itemVariants}
+          className="flex items-center gap-2 text-lg sm:text-xl lg:text-2xl text-gray-600 text-center max-w-2xl sm:max-w-3xl mt-6 sm:mt-8 leading-relaxed font-light px-4"
+        >
+          <h1 className="text-red-600 text-2xl md:text-3xl lg:text-4xl font-bold">
+            Starting from only
+          </h1>
+
+          <div className="flex gap-4 lg:gap-6 items-center">
+          <span
+          >
+            <ArrowRight className="w-7 h-7 md:w-8 md:h-8  lg:w-10 lg:h-10 text-red-600 " />
+          </span>
+
+              <motion.p
+      className="bg-red-600 text-white px-2 py-1 md:px-3 md:py-1.5 lg:px-4 lg:py-1.5 rounded-2xl lg:text-5xl text-3xl font-mono"
+      animate={{
+        scale: [1, 1.15, 1],
+      }}
+      transition={{
+        duration: 1.8,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    >
+      $10
+    </motion.p>
+
+          </div>
+        </motion.div>
+
+        {/* Trust Badge */}
         <motion.div
           variants={itemVariants}
           className="mt-5 flex items-center gap-4 bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg border border-white/20 max-w-md sm:max-w-lg mx-auto"
@@ -160,20 +194,24 @@ const HeroSection = () => {
 
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <div className="flex gap-1">
-              {Array(5).fill(0).map((_, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ delay: i * 0.1 }}
-                >
-                  <Star className="size-4 sm:size-5 text-amber-400 fill-current" />
-                </motion.div>
-              ))}
+              {Array(5)
+                .fill(0)
+                .map((_, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ delay: i * 0.1 }}
+                  >
+                    <Star className="size-4 sm:size-5 text-amber-400 fill-current" />
+                  </motion.div>
+                ))}
             </div>
             <p className="text-sm text-gray-600 font-medium mt-1 flex items-center gap-1">
               <Users className="size-4 text-indigo-500" />
-              Trusted by <span className="text-indigo-600 font-semibold">1,000+</span> clients
+              Trusted by{" "}
+              <span className="text-indigo-600 font-semibold">1,000+</span>{" "}
+              clients
             </p>
           </div>
         </motion.div>
@@ -189,7 +227,7 @@ const HeroSection = () => {
             className="group bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white rounded-2xl px-8 py-4 font-semibold shadow-2xl shadow-indigo-500/25 hover:shadow-indigo-500/40 transition-all duration-300 flex items-center gap-3 w-full sm:w-auto justify-center"
           >
             <Phone className="size-5" />
-            <span>Start Your Project</span>
+            <span>Consult An Expert</span>
             <ArrowRight className="size-5 group-hover:translate-x-1 transition-transform duration-200" />
           </motion.button>
 
@@ -419,4 +457,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default ArticleWriting;

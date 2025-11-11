@@ -2,7 +2,7 @@ import React from "react";
 import { PhoneCall , MessageCircle, BookOpenText, Zap, Quote } from "lucide-react";
 import { motion } from "framer-motion";
 
-function CallToAction() {
+function CallToAction({title, title2, description}) {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -84,10 +84,10 @@ function CallToAction() {
           variants={itemVariants}
         >
           <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white leading-tight">
-            Our Creative Writing Professionals
+            {title}
           </h1>
           <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white leading-tight">
-            Take Content Creation to the Next Level
+            {title2}
           </h1>
         </motion.div>
 
@@ -106,7 +106,7 @@ function CallToAction() {
           variants={itemVariants}
         >
           <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed">
-            Get professionals to provide top-notch writing services to get exactly what you need. <br />Give us a call and join our exclusive list of satisfied clients.
+            {description}
           </p>
 
           {/* Buttons Container */}

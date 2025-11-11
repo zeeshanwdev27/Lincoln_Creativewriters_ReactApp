@@ -17,13 +17,13 @@ function MainHome() {
     <HeroSection/>
     <HowWeProvide/>
     <WhatWeCreate/>
-    <CallToAction/>
+    <CallToAction title={'Our Creative Writing Professionals'} title2={'Take Content Creation to the Next Level'} description={'Get professionals to provide top-notch writing services to get exactly what you need. Give us a call and join our exclusive list of satisfied clients.'}/>
     <Features/>
     <CollabrateWithUs/>
     <WritingServicesSteps/>
     <ContentWithoutWorry/>
     <WhyChooseUs/>
-    <Testimonials/>
+    <Testimonials title={'Happy Clients'}/>
     <FAQS/>
       
     </>

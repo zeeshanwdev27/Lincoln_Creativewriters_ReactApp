@@ -8,7 +8,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 
-function Testimonials() {
+function Testimonials({title}) {
   const dummyTestimonialData = [
     {
       image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200",
@@ -70,7 +70,7 @@ function Testimonials() {
     <div className='px-4 sm:px-6 lg:px-8 xl:px-32 py-16 lg:py-24 bg-[url(https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gradientBackground.png)]'>
       <div className='text-center mb-8 lg:mb-12'>
         <h2 className='text-indigo-600  text-3xl sm:text-4xl lg:text-6xl font-semibold mb-4'>
-          Happy Clients
+          {title}
         </h2>
         <p className='text-slate-700 max-w-lg mx-auto text-sm sm:text-base'>
           What Our Satisfied Clients Have to Say
