@@ -1,19 +1,21 @@
-import React from 'react'
-import HeroSection from './HeroSection.jsx'
-import HowWeProvide from './HowWeProvide.jsx'
-import WhatWeCreate from './WhatWeCreate.jsx'
-import CallToAction from './CallToAction.jsx'
-import Features from './Features.jsx'
-import CollabrateWithUs from './CollabrateWithUs.jsx'
-import WritingServicesSteps from './WritingServicesSteps.jsx'
-import ContentWithoutWorry from './ContentWithoutWorry.jsx'
-import WhyChooseUs from './WhyChooseUs.jsx'
-import Testimonials from './Testimonials.jsx'
-import FAQS from './FAQS.jsx'
+import React, { Suspense } from 'react';
+
+const HeroSection = React.lazy(()=> import('./HeroSection.jsx'))
+const HowWeProvide = React.lazy(()=> import('./HowWeProvide.jsx'))
+const WhatWeCreate = React.lazy(()=> import('./WhatWeCreate.jsx'))
+const CallToAction = React.lazy(()=> import('./CallToAction.jsx'))
+const Features = React.lazy(()=> import('./Features.jsx'))
+const CollabrateWithUs = React.lazy(()=> import('./CollabrateWithUs.jsx'))
+const WritingServicesSteps = React.lazy(()=> import('./WritingServicesSteps.jsx'))
+const ContentWithoutWorry = React.lazy(()=> import('./ContentWithoutWorry.jsx'))
+const WhyChooseUs = React.lazy(()=> import('./WhyChooseUs.jsx'))
+const Testimonials = React.lazy(()=> import('./Testimonials.jsx'))
+const FAQS = React.lazy(()=> import('./FAQS.jsx'))
 
 function MainHome() {
   return (
     <>
+    <Suspense fallback={ <div className="flex items-center justify-center mt-80"> <div className="w-12 h-12 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin"></div></div>}>
     <HeroSection/>
     <HowWeProvide/>
     <WhatWeCreate/>
@@ -25,7 +27,7 @@ function MainHome() {
     <WhyChooseUs/>
     <Testimonials title={'Happy Clients'}/>
     <FAQS/>
-      
+    </Suspense>
     </>
   )
 }

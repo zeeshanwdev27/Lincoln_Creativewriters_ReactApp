@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react';
 const MBHeroSection = React.lazy(()=> import('../MicroBlogPosts/MBHeroSection.jsx'))
 const HireListicleWritingExperts = React.lazy(()=> import('./HireListicleWritingExperts.jsx'))
 const CallToAction  = React.lazy(()=> import('../../Home/CallToAction.jsx'))
@@ -11,6 +11,7 @@ const Testimonials  = React.lazy(()=> import('../../Home/Testimonials.jsx'))
 function ListicleWriting() {
   return (
     <>
+    <Suspense fallback={ <div className="flex items-center justify-center mt-80"> <div className="w-12 h-12 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin"></div></div>}>
     <MBHeroSection title1={"Premier"} title2={"Listicle "} title3={"Writing"} title4={"Services"} description={"We are home to a proficient team of writers who can produce high-quality and engaging listicles for you."}/>
     <HireListicleWritingExperts/>
     <CallToAction title={'Top Notch Creative Writing Service'} title2={'Get Impactful Content That Matters'} description={"Our creative writing services are top-notch, backed by solid research, and completely free from plagiarism. It's all about quality you can count on!"}/>
@@ -18,8 +19,7 @@ function ListicleWriting() {
     <CallToAction title={'Top Notch Creative Writing Service'} title2={'Get Impactful Content That Matters'} description={"Our creative writing services are top-notch, backed by solid research, and completely free from plagiarism. It's all about quality you can count on!"}/>
     <WhatWeDo/>
     <Testimonials title={'Appreciation from Clients'}/>
-
-
+    </Suspense>
     </>
   )
 }
