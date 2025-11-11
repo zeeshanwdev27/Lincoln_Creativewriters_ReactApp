@@ -52,7 +52,7 @@ function BottomNavbar() {
   ];
 
   return (
-    <div className="relative bg-gradient-to-r from-indigo-600 to-purple-600 shadow-lg">
+    <div className="z-50 relative bg-gradient-to-r from-indigo-600 to-purple-600 shadow-lg">
       {/* Desktop Navigation */}
       <div className="hidden lg:flex justify-center">
         <ul className="flex items-center gap-1 py-3 px-6">
