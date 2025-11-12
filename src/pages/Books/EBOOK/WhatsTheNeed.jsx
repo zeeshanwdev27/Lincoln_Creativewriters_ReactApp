@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-function WhatsTheNeed() {
+function WhatsTheNeed({title1,title2,title3,description}) {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -93,14 +93,14 @@ function WhatsTheNeed() {
           className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-700'
           variants={itemVariants}
         >
-          What’s the <span className='text-indigo-500'>Need for an eBook Writing</span> Service?
+          {title1} <span className='text-indigo-500'>{title2}</span> {title3}
         </motion.h1>
         
         <motion.p 
           className='text-sm sm:text-base text-slate-600'
           variants={itemVariants}
         >
-          Having your eBook has multiple benefits. It is a great tool to get your stories heard and can also be used as a strong marketing asset that helps draw an audience to your website. But when it comes down to writing one, it can be a hassle. Consider hiring eBook writing services to get one created for you. Lincoln Creative Writers is your one-stop eBook writing company for getting a refined quality eBook published. We have experts to help craft an eBook for you. Take the first step towards writing your eBook with us.
+          {description}
         </motion.p>
         
         

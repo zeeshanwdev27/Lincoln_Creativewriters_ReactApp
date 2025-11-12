@@ -13,7 +13,8 @@ function BottomNavbar() {
     },
     { 
       name: 'Books', 
-      submenu: [{name:'EBOOK', link: '/ebook-writing-services'},{name:'AUTOBIOGRAPHY WRITING', link: '/article-writing'},{name:'FICTION BOOKS', link: '/article-writing'},{name:'AUDIO BOOKS', link: '/article-writing'},]
+      submenu: [{name:'EBOOK', link: '/ebook-writing-services'},{name:'AUTOBIOGRAPHY WRITING', link: '/autobiography-writing-services'},
+                {name:'FICTION BOOKS', link: '/fiction-books'},{name:'AUDIO BOOKS', link: '/article-writing'},]
     },
     { 
       name: 'Business Writing', 

@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
-function OurRecentRelease() {
+function OurRecentRelease({title}) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -105,7 +105,7 @@ function OurRecentRelease() {
           transition={{ type: "spring", stiffness: 400 }}
         >
           <Star className="w-3 h-3 sm:w-4 sm:h-4 fill-current" />
-          Hire Professional Ebook Writers Today
+          Hire Professional {title} Writers Today
         </motion.div>
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-3 sm:mb-4">

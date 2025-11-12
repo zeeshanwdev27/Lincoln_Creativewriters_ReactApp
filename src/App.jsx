@@ -3,6 +3,8 @@ import { createBrowserRouter, createRoutesFromElements, Route } from "react-rout
 import Layout from "./Layout/Layout.jsx"
 
 const MainHome = React.lazy(()=> import('./pages/Home/MainHome.jsx'))
+
+// Article Pages
 const Article = React.lazy(()=> import('./pages/ArticlesAndBlogs/Article/Article.jsx'))
 const BlogWriting = React.lazy(()=> import('./pages/ArticlesAndBlogs/Blogs/BlogWriting.jsx'))
 const MicroBlogPosts = React.lazy(()=> import('./pages/ArticlesAndBlogs/MicroBlogPosts/MicroBlogPosts.jsx'))
@@ -11,7 +13,10 @@ const PowerBlogPosts = React.lazy(()=> import('./pages/ArticlesAndBlogs/PowerBlo
 const MagazineArticles = React.lazy(()=> import('./pages/ArticlesAndBlogs/MagazineArticles/MagazineArticles.jsx'))
 const ListicleWriting = React.lazy(()=> import('./pages/ArticlesAndBlogs/ListicleWriting/ListicleWriting.jsx'))
 
+// Books Pages
 const EBOOK = React.lazy(()=> import('./pages/Books/EBOOK/EBOOK.jsx'))
+const AUTOBIOGRAPHY_WRITING = React.lazy(()=> import('./pages/Books/AUTOBIOGRAPHY_WRITING/AUTOBIOGRAPHY_WRITING.jsx'))
+const FICTION_BOOKS = React.lazy(()=> import('./pages/Books/FICTION_BOOKS/FICTION_BOOKS.jsx'))
 
 
 
@@ -28,6 +33,8 @@ const App = createBrowserRouter(
         <Route path="/magazine-articles" element={<MagazineArticles />} />
         <Route path="/listicles" element={<ListicleWriting />} />
         <Route path="/ebook-writing-services" element={<EBOOK />} />
+        <Route path="/autobiography-writing-services" element={<AUTOBIOGRAPHY_WRITING />} />
+        <Route path="/fiction-books" element={<FICTION_BOOKS />} />
       </Route>
     </>
   )
