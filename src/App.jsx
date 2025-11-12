@@ -11,6 +11,8 @@ const PowerBlogPosts = React.lazy(()=> import('./pages/ArticlesAndBlogs/PowerBlo
 const MagazineArticles = React.lazy(()=> import('./pages/ArticlesAndBlogs/MagazineArticles/MagazineArticles.jsx'))
 const ListicleWriting = React.lazy(()=> import('./pages/ArticlesAndBlogs/ListicleWriting/ListicleWriting.jsx'))
 
+const EBOOK = React.lazy(()=> import('./pages/Books/EBOOK/EBOOK.jsx'))
+
 
 
 const App = createBrowserRouter(
@@ -25,6 +27,7 @@ const App = createBrowserRouter(
         <Route path="/power-blog-posts" element={<PowerBlogPosts />} />
         <Route path="/magazine-articles" element={<MagazineArticles />} />
         <Route path="/listicles" element={<ListicleWriting />} />
+        <Route path="/ebook-writing-services" element={<EBOOK />} />
       </Route>
     </>
   )

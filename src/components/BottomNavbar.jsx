@@ -7,13 +7,13 @@ function BottomNavbar() {
   const menuItems = [
     { 
       name: 'Articles & Blogs', 
-      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/blogs-writing'},{name:'Micro-Blog Posts', link: '/microblog-posts'},
-               {name:'NewsJacking Posts', link: '/newsjacking-posts'},{name:'Power Blog Posts', link: '/power-blog-posts'}, {name:'Magazine Articles', link: '/magazine-articles'},
-               {name:'Listicles', link: '/listicles'},]
+      submenu: [{name:'ARTICLE WRITING', link: '/article-writing'},{name:'BLOG WRITING', link: '/blogs-writing'},{name:'MICRO-BLOG POSTS', link: '/microblog-posts'},
+               {name:'NEWSJACKING-POSTS', link: '/newsjacking-posts'},{name:'POWER-BLOG POSTS', link: '/power-blog-posts'}, {name:'MAGAZINE ARTICLES', link: '/magazine-articles'},
+               {name:'LISTICLES', link: '/listicles'},]
     },
     { 
       name: 'Books', 
-      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
+      submenu: [{name:'EBOOK', link: '/ebook-writing-services'},{name:'AUTOBIOGRAPHY WRITING', link: '/article-writing'},{name:'FICTION BOOKS', link: '/article-writing'},{name:'AUDIO BOOKS', link: '/article-writing'},]
     },
     { 
       name: 'Business Writing', 
