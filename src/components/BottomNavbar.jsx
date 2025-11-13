@@ -14,11 +14,20 @@ function BottomNavbar() {
     { 
       name: 'Books', 
       submenu: [{name:'EBOOK', link: '/ebook-writing-services'},{name:'AUTOBIOGRAPHY WRITING', link: '/autobiography-writing-services'},
-                {name:'FICTION BOOKS', link: '/fiction-books'},{name:'AUDIO BOOKS', link: '/article-writing'},]
+                {name:'FICTION BOOKS', link: '/fiction-books'},{name:'AUDIO BOOKS', link: '/audio-book-services'},]
     },
     { 
       name: 'Business Writing', 
-      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
+      submenu: [{name:'NEWSLETTER WRITING', link: '/newsletter-writing'},
+                {name:'WHITE-PAPER WRITING SERVICE', link: '/whitepaper-writing-service'},
+                {name:'BUSINESS-PROPOSALS', link: '/business-proposal'},
+                {name:'BUSINESS PLAN', link: '/article-writing'},
+                {name:'GRANT WRITING', link: '/article-writing'}, 
+                {name:'EMAIL WRITING', link: '/article-writing'}, 
+                {name:'PITCH DECK', link: '/article-writing'},
+                {name:'PRESS RELEASE WRITING SERVICES', link: '/article-writing'},
+                {name:'PRESENTATIONS WRITING', link: '/article-writing'}, 
+                {name:'CUSTOMERS LETTERS', link: '/article-writing'},]
     },
     { 
       name: 'Editing Service', 

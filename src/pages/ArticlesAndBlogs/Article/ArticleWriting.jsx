@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-const ArticleWriting = ({title1, title2, title3, title4, description}) => {
+const ArticleWriting = ({title1, title2, title3, title4, description, amount}) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -167,7 +167,7 @@ const ArticleWriting = ({title1, title2, title3, title4, description}) => {
         ease: "easeInOut",
       }}
     >
-      $10
+      ${amount}
     </motion.p>
 
           </div>
