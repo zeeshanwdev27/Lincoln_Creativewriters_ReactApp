@@ -41,31 +41,48 @@ function BottomNavbar() {
                 {name:'RESUME WRITING', link: '/resume-writing-services'},
                 {name:'WIKIPEDIA WRITING', link: '/wikipedia-writing'}, 
                 {name:'COMPLAINT LETTER WRITING SERVICE', link: '/complaint-letters'},
-                {name:'RECOMMENDATION LETTERS', link: '/'},]
+                {name:'RECOMMENDATION LETTERS', link: '/recommendation-letters'},]
     },
     { 
       name: 'Digital Solution', 
-      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
+      submenu: [{name:'GUEST POST SERVICE', link: '/guest-post-service'},
+                {name:'LANDING PAGE WRITING SERVICES', link: '/landing-page-writing-service'},
+                {name:'PRODUCT DESCRIPTION WRITING', link: '/product-description-writing-services'},
+                {name:'WEB CONTENT WRITING', link: '/web-content-writing'},
+                {name:'WEBSITE DESIGN AND DEVELOPMENT SERVICES', link: '/website-design-and-development-services'},
+                {name:'RESUME WRITING', link: '/resume-writing-services'},
+                {name:'WIKIPEDIA WRITING', link: '/wikipedia-writing'}, 
+              ]
     },
     { 
       name: 'Design', 
-      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
+      submenu: [{name:'VIDEOS', link: '/videos'},
+                {name:'LOGO DESIGN', link: '/logo-design'},
+                {name:'BUSINESS CARD', link: '/business-card'},
+                {name:'INFOGRAPHICS', link: '/infographic'},
+                {name:'FLYERS', link: '/flyer'}, 
+                {name:'WEBSITE REDESIGN', link: '/website-redesign'},
+                {name:'LETTERHEAD', link: '/letter-head'},
+                {name:'EBOOK COVER', link: '/ebook-cover'},
+                {name:'ECOMMERCE WEBSITE DESIGN', link: '#'},
+                {name:'FACEBOOK COVER', link: '#'},
+      ]
     },
     { 
       name: 'Marketing', 
-      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
+      submenu: [{name:'Article Writing', link: '#'},]
     },
     { 
       name: 'Social Media', 
-      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
+      submenu: [{name:'Article Writing', link: '#'},]
     },
     { 
       name: 'SEO', 
-      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
+      submenu: [{name:'Article Writing', link: '#'},]
     },
     { 
       name: 'Industries', 
-      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
+      submenu: [{name:'Article Writing', link: '#'},]
     },
   ];
 

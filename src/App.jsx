@@ -42,6 +42,24 @@ const Bio_Writing = React.lazy(()=> import('./pages/PersonalWriting/Bio_Writing/
 const Resume_Writing = React.lazy(()=> import('./pages/PersonalWriting/Resume_Writing/Resume_Writing.jsx'))
 const Wikipedia_Writing = React.lazy(()=> import('./pages/PersonalWriting/Wikipedia_Writing/Wikipedia_Writing.jsx'))
 const Compliant_Writing = React.lazy(()=> import('./pages/PersonalWriting/Compliant_Writing/Compliant_Writing.jsx'))
+const Recommendation_Letter = React.lazy(()=> import('./pages/PersonalWriting/Recommendation_Letter/Recommendation_Letter.jsx'))    // *
+
+// DigitalSolution
+const GuestPost_Service = React.lazy(()=> import('./pages/DigitalSolution/GuestPost_Service/GuestPost_Service.jsx'))
+const LandingPage_Writing = React.lazy(()=> import('./pages/DigitalSolution/LandingPage_Writing/LandingPage_Writing.jsx'))
+const ProductDescription_Letter = React.lazy(()=> import('./pages/DigitalSolution/ProductDescription_Letter/ProductDescription_Letter.jsx'))
+const Webcontent_Writing = React.lazy(()=> import('./pages/DigitalSolution/Webcontent_Writing/Webcontent_Writing.jsx'))
+const WebdesignAnd_Development = React.lazy(()=> import('./pages/DigitalSolution/WebdesignAnd_Development/WebdesignAnd_Development.jsx'))
+
+// Design
+const VideosMain = React.lazy(()=> import('./pages/Design/Videos/VideosMain.jsx'))
+const Logo_Design = React.lazy(()=> import('./pages/Design/Logo_Design/Logo_Design.jsx'))
+const Business_Card = React.lazy(()=> import('./pages/Design/Business_Card/Business_Card.jsx'))
+const Infographic_Main = React.lazy(()=> import('./pages/Design/Infographic/Infographic_Main.jsx'))
+const Flyer_Main = React.lazy(()=> import('./pages/Design/Flyer/Flyer_Main.jsx'))
+const Website_Redesign = React.lazy(()=> import('./pages/Design/Website_Redesign/Website_Redesign.jsx'))
+const Letter_Head = React.lazy(()=> import('./pages/Design/Letter_Head/Letter_Head.jsx'))
+const Ebook_Cover = React.lazy(()=> import('./pages/Design/Ebook_Cover/Ebook_Cover.jsx'))
 
 
 const App = createBrowserRouter(
@@ -80,6 +98,24 @@ const App = createBrowserRouter(
         <Route path="/resume-writing-services" element={<Resume_Writing />} />
         <Route path="/wikipedia-writing" element={<Wikipedia_Writing />} />
         <Route path="/complaint-letters" element={<Compliant_Writing />} />
+        <Route path="/recommendation-letters" element={<Recommendation_Letter />} />
+
+
+        <Route path="/guest-post-service" element={<GuestPost_Service />} />
+        <Route path="/landing-page-writing-service" element={<LandingPage_Writing />} />
+        <Route path="/product-description-writing-services" element={<ProductDescription_Letter />} />
+        <Route path="/web-content-writing" element={<Webcontent_Writing />} />
+        <Route path="/website-design-and-development-services" element={<WebdesignAnd_Development />} />
+
+
+        <Route path="/videos" element={<VideosMain />} />
+        <Route path="/logo-design" element={<Logo_Design />} />
+        <Route path="/business-card" element={<Business_Card />} />
+        <Route path="/infographic" element={<Infographic_Main />} />
+        <Route path="/flyer" element={<Flyer_Main />} />
+        <Route path="/website-redesign" element={<Website_Redesign />} />
+        <Route path="/letter-head" element={<Letter_Head />} />
+        <Route path="/ebook-cover" element={<Ebook_Cover />} />
 
       </Route>
     </>
