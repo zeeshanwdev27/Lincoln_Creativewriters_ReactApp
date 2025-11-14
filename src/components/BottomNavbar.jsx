@@ -21,21 +21,27 @@ function BottomNavbar() {
       submenu: [{name:'NEWSLETTER WRITING', link: '/newsletter-writing'},
                 {name:'WHITE-PAPER WRITING SERVICE', link: '/whitepaper-writing-service'},
                 {name:'BUSINESS-PROPOSALS', link: '/business-proposal'},
-                {name:'BUSINESS PLAN', link: '/article-writing'},
-                {name:'GRANT WRITING', link: '/article-writing'}, 
-                {name:'EMAIL WRITING', link: '/article-writing'}, 
-                {name:'PITCH DECK', link: '/article-writing'},
-                {name:'PRESS RELEASE WRITING SERVICES', link: '/article-writing'},
-                {name:'PRESENTATIONS WRITING', link: '/article-writing'}, 
-                {name:'CUSTOMERS LETTERS', link: '/article-writing'},]
+                {name:'BUSINESS PLAN', link: '/business-plan-writing-services'},
+                {name:'GRANT WRITING', link: '/grant-writing-services'}, 
+                {name:'EMAIL WRITING', link: '/email-writing'}, 
+                {name:'PITCH DECK', link: '/pitch-deck-design-services'},
+                {name:'PRESS RELEASE WRITING SERVICES', link: '/press-release-writing-service'},
+                {name:'PRESENTATIONS WRITING', link: '/presentations-writing'}, 
+                {name:'CUSTOMERS LETTERS', link: '/customer-letters'},]
     },
     { 
       name: 'Editing Service', 
-      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
+      submenu: [{name:'EDITING & PROOF-READING SERVICE', link: '/editing-and-proofreading-services'},{name:'REWRITING', link: '/rewriting'},]
     },
     { 
       name: 'Personal Writing', 
-      submenu: [{name:'Article Writing', link: '/article-writing'},{name:'Blog Writing', link: '/article-writing'},{name:'Micro-Blog Posts', link: '/article-writing'},{name:'NewsJacking Posts', link: '/article-writing'},{name:'Power Blog Posts', link: '/article-writing'}, {name:'Magazine Articles', link: '/article-writing'},{name:'Listicles', link: '/article-writing'},]
+      submenu: [{name:'TRANSCRIPTION SERVICE', link: '/transcription-service'},
+                {name:'VIDEO SCRIPT WRITING', link: '/video-script-writing-services'},
+                {name:'BIO WRITING', link: '/bio-writing'},
+                {name:'RESUME WRITING', link: '/resume-writing-services'},
+                {name:'WIKIPEDIA WRITING', link: '/wikipedia-writing'}, 
+                {name:'COMPLAINT LETTER WRITING SERVICE', link: '/complaint-letters'},
+                {name:'RECOMMENDATION LETTERS', link: '/'},]
     },
     { 
       name: 'Digital Solution', 
@@ -89,7 +95,7 @@ function BottomNavbar() {
               
               {/* Dropdown Menu */}
               {activeDropdown === item.name && (
-                <div className="z-50 absolute top-full left-0 mt-1 w-64 bg-white rounded-xl shadow-2xl border border-gray-200 animate-in fade-in-0 zoom-in-95">
+                <div className="z-50 absolute top-full left-0 mt-0.5 w-64 bg-white rounded-xl shadow-2xl border border-gray-200 animate-in fade-in-0 zoom-in-95">
                   <div className="p-2">
                     {item.submenu.map((subItem, subIndex) => (
                       <Link
